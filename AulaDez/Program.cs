@@ -1,37 +1,39 @@
 ﻿using System;
 using System.Globalization;
-
-namespace AulaDez {
-    internal class Program {
+namespace Course {
+    class Program {
         static void Main(string[] args) {
+            string nome;
+            double preco;
+            int quantidade;
 
-            double a = 10 / 8;
-            double b = (double)10 / 8;
-            double c = 10.0 / 8;
-            double d = Math.Pow(b, 3.0);
-            Console.WriteLine(a);
-            Console.WriteLine(b);
-            Console.WriteLine(c);
-            Console.WriteLine(d.ToString(CultureInfo.InvariantCulture));
+            Console.WriteLine("Entre os dados do produto:");
+            Console.Write("Nome: ");
+            nome = Console.ReadLine();
+            Console.Write("Preço: ");
+            preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.Write("Quantidade no estoque: ");
+            quantidade = int.Parse(Console.ReadLine());
+            Console.WriteLine();
 
-            Console.WriteLine("Entre com seu nome completo:");
-            string fullName = Console.ReadLine();
-            Console.WriteLine("Quantos quartos tem na sua casa?");
-            int bedrooms = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter product price:");
-            double price = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.WriteLine("Entre seu último nome, idade e altura (mesma linha):");
-            string[] vect = Console.ReadLine().Split(' ');
-            string lastName = vect[0];
-            int age = int.Parse(vect[1]);
-            double height = double.Parse(vect[2], CultureInfo.InvariantCulture);
-            Console.WriteLine(fullName);
-            Console.WriteLine(bedrooms);
-            Console.WriteLine(price.ToString("F2", CultureInfo.InvariantCulture));
-            Console.WriteLine(lastName);
-            Console.WriteLine(age);
-            Console.WriteLine(height.ToString("F2", CultureInfo.InvariantCulture));
+            Produto p = new Produto(nome, preco, quantidade);
 
+            Console.WriteLine("Dados do produto: " + p);
+            Console.WriteLine();
+            Console.Write("Digite o número de produtos a ser adicionado ao estoque: ");
+            int qte = int.Parse(Console.ReadLine());
+            p.AdicionarProdutos(qte);
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados: " + p);
+            Console.WriteLine();
+            Console.Write("Digite o número de produtos a ser removido do estoque: ");
+            qte = int.Parse(Console.ReadLine());
+            p.RemoverProdutos(qte);
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados: " + p);
+
+            Console.WriteLine(p.Preco);
+            Console.WriteLine(p.Nome);
         }
     }
 }

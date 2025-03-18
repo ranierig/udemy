@@ -26,3 +26,18 @@ C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\DOTNET\CHARPUDEMY\AulaDez\AulaDez\obj\D
 C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\DOTNET\CHARPUDEMY\AulaDez\AulaDez\obj\Debug\net8.0\AulaDez.pdb
 C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\DOTNET\CHARPUDEMY\AulaDez\AulaDez\obj\Debug\net8.0\AulaDez.genruntimeconfig.cache
 C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\DOTNET\CHARPUDEMY\AulaDez\AulaDez\obj\Debug\net8.0\ref\AulaDez.dll
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\bin\Debug\net8.0\AulaDez.exe
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\bin\Debug\net8.0\AulaDez.deps.json
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\bin\Debug\net8.0\AulaDez.runtimeconfig.json
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\bin\Debug\net8.0\AulaDez.dll
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\bin\Debug\net8.0\AulaDez.pdb
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\obj\Debug\net8.0\AulaDez.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\obj\Debug\net8.0\AulaDez.AssemblyInfoInputs.cache
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\obj\Debug\net8.0\AulaDez.AssemblyInfo.cs
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\obj\Debug\net8.0\AulaDez.csproj.CoreCompileInputs.cache
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\obj\Debug\net8.0\AulaDez.sourcelink.json
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\obj\Debug\net8.0\AulaDez.dll
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\obj\Debug\net8.0\refint\AulaDez.dll
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\obj\Debug\net8.0\AulaDez.pdb
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\obj\Debug\net8.0\AulaDez.genruntimeconfig.cache
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\UDEMY\C# COMPLETO Programação Orientada a Objetos + Projetos\udemy\AulaDez\obj\Debug\net8.0\ref\AulaDez.dll
