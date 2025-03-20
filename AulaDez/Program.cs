@@ -6,11 +6,11 @@ namespace Course;
 class Program {
     public static void Main(string[] args) {
 
-        ListaContas listaContas = new ListaContas();
+        GerenciaContas listaContas = new GerenciaContas();
         
         ExibirOpcoesDoMenu("-1");
         void ExibirOpcoesDoMenu(string _itemMenu) {
-            
+            Console.Clear();
             while (_itemMenu != "0") {
                 Console.WriteLine("1 - Listar contas");
                 Console.WriteLine("2 - Criar conta");
@@ -21,10 +21,9 @@ class Program {
 
                 Console.Write("Escolha uma opção: ");
                 _itemMenu = Console.ReadLine();
-                Console.WriteLine(_itemMenu);
-
+                
                 switch (_itemMenu) {
-                    case "1": Console.WriteLine("lista");
+                    case "1": listaContas.ListarContas();
                         break;
                     case "2": listaContas.AdicionaConta();
                         break;
@@ -39,8 +38,9 @@ class Program {
                         break;
                     default: Console.WriteLine("");
                         break;
-
+                        
                 }
+                Console.Clear();
             }
         }
     }

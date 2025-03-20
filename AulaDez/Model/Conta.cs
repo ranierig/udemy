@@ -8,8 +8,8 @@ namespace AulaDez.Model;
 internal class Conta {
     public int NumeroConta { get; private set; }
     public string NomePessoa { get; set; }
-    public int SaldoConta { get; private set; }
-    public Conta(int numeroConta, string nomePessoa, int depositoInicial) {
+    public double SaldoConta { get; private set; }
+    public Conta(int numeroConta, string nomePessoa, double depositoInicial) {
         NumeroConta = numeroConta;
         NomePessoa = nomePessoa;
         SaldoConta = depositoInicial;
