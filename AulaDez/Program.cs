@@ -1,39 +1,48 @@
-﻿using System;
-using System.Globalization;
-namespace Course {
-    class Program {
-        static void Main(string[] args) {
-            string nome;
-            double preco;
-            int quantidade;
+﻿using System.ComponentModel.Design;
+using System.Security.Cryptography.X509Certificates;
+using AulaDez.Model;
+namespace Course;
 
-            Console.WriteLine("Entre os dados do produto:");
-            Console.Write("Nome: ");
-            nome = Console.ReadLine();
-            Console.Write("Preço: ");
-            preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.Write("Quantidade no estoque: ");
-            quantidade = int.Parse(Console.ReadLine());
-            Console.WriteLine();
+class Program {
+    public static void Main(string[] args) {
 
-            Produto p = new Produto(nome, preco, quantidade);
+        ListaContas listaContas = new ListaContas();
+        
+        ExibirOpcoesDoMenu("-1");
+        void ExibirOpcoesDoMenu(string _itemMenu) {
+            
+            while (_itemMenu != "0") {
+                Console.WriteLine("1 - Listar contas");
+                Console.WriteLine("2 - Criar conta");
+                Console.WriteLine("3 - Depósito");
+                Console.WriteLine("4 - Saque");
+                Console.WriteLine("5 - Extrato conta");
+                Console.WriteLine("0 - Sair");
 
-            Console.WriteLine("Dados do produto: " + p);
-            Console.WriteLine();
-            Console.Write("Digite o número de produtos a ser adicionado ao estoque: ");
-            int qte = int.Parse(Console.ReadLine());
-            p.AdicionarProdutos(qte);
-            Console.WriteLine();
-            Console.WriteLine("Dados atualizados: " + p);
-            Console.WriteLine();
-            Console.Write("Digite o número de produtos a ser removido do estoque: ");
-            qte = int.Parse(Console.ReadLine());
-            p.RemoverProdutos(qte);
-            Console.WriteLine();
-            Console.WriteLine("Dados atualizados: " + p);
+                Console.Write("Escolha uma opção: ");
+                _itemMenu = Console.ReadLine();
+                Console.WriteLine(_itemMenu);
 
-            Console.WriteLine(p.Preco);
-            Console.WriteLine(p.Nome);
+                switch (_itemMenu) {
+                    case "1": Console.WriteLine("lista");
+                        break;
+                    case "2": listaContas.AdicionaConta();
+                        break;
+                    case "3":
+                        Console.WriteLine("temp");
+                        break;
+                    case "4":
+                        Console.WriteLine("temp");
+                        break;
+                    case "5":
+                        Console.WriteLine("temp");
+                        break;
+                    default: Console.WriteLine("");
+                        break;
+
+                }
+            }
         }
     }
 }
+
