@@ -14,13 +14,8 @@ internal class LancamentoConta {
         Conta = conta;
         TipoLancamento = tipoLancamento;
         Valor = valor;
-        if (char.ToUpper(tipoLancamento) == 'C') {
-            SaldoConta = saldoConta + valor;
-        } else if (char.ToUpper(tipoLancamento) == 'D') {
-            SaldoConta = saldoConta - valor;
-        } else {
-            SaldoConta = saldoConta;    
-        }
+        saldoConta = conta.AtualizaSaldo(tipoLancamento,saldoConta,valor);
+
     }
 
 }

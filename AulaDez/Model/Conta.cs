@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,5 +15,14 @@ internal class Conta {
         NomePessoa = nomePessoa;
         SaldoConta = depositoInicial;
     }
-    
+    public double AtualizaSaldo (char tipoLancamento, double saldoConta, double valor) {
+        if (char.ToUpper(tipoLancamento) == 'C') {
+            SaldoConta = saldoConta + valor;
+        } else if (char.ToUpper(tipoLancamento) == 'D') {
+            SaldoConta = saldoConta - valor;
+        } else {
+            SaldoConta = saldoConta;
+        }
+        return SaldoConta; 
+    }
 }

@@ -6,7 +6,7 @@ namespace Course;
 class Program {
     public static void Main(string[] args) {
 
-        GerenciaContas listaContas = new GerenciaContas();
+        GerenciaContas gerenciaContas = new GerenciaContas();
         
         ExibirOpcoesDoMenu("-1");
         void ExibirOpcoesDoMenu(string _itemMenu) {
@@ -23,18 +23,15 @@ class Program {
                 _itemMenu = Console.ReadLine();
                 
                 switch (_itemMenu) {
-                    case "1": listaContas.ListarContas();
+                    case "1": gerenciaContas.ListarContas();
                         break;
-                    case "2": listaContas.AdicionaConta();
+                    case "2": gerenciaContas.AdicionaConta();
                         break;
-                    case "3":
-                        Console.WriteLine("temp");
+                    case "3": gerenciaContas.LancarCredito();
                         break;
-                    case "4":
-                        Console.WriteLine("temp");
+                    case "4": gerenciaContas.LancarDebito();
                         break;
-                    case "5":
-                        Console.WriteLine("temp");
+                    case "5": gerenciaContas.ExtratoConta();
                         break;
                     default: Console.WriteLine("");
                         break;

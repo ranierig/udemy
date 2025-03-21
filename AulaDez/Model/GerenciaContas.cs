@@ -22,9 +22,41 @@ internal class GerenciaContas {
         Console.Read();
     }
     public void LancarCredito() {
-        // mock
-        LancamentoContas.Add(new LancamentoConta(Contas[1], 'C', 8.2, 0));
+        try {
+            // mock
+            LancamentoContas.Add(new LancamentoConta(Contas[0], 'C', 8.2, Contas[0].SaldoConta)!);
+            //Contas[0].SaldoConta = LancamentoContas[0].SaldoConta;
+            Console.WriteLine($"Creditado R$ 8.2 com sucesso na conta {Contas[0].NumeroConta} e o saldo é de {Contas[0].SaldoConta}");
+        } catch (ArgumentOutOfRangeException e) {
+            Console.WriteLine($"Entre com uma conta válida: {e}");
+        }
+        
         Console.Write("\n Pressione qualquer tecla para continuar.");
+        Console.Read();
+
+    }
+
+    internal void LancarDebito() {
+        Console.Clear();
+        try {
+            // mock
+            LancamentoContas.Add(new LancamentoConta(Contas[0], 'D', 6.5, Contas[0].SaldoConta)!);
+            //Contas[0].SaldoConta = LancamentoContas[0].SaldoConta;
+            Console.WriteLine($"Debitado R$ 6.5 com sucesso na conta {Contas[0].NumeroConta} e o saldo é de {Contas[0].SaldoConta}");
+        } catch (ArgumentOutOfRangeException e) {
+            Console.WriteLine($"Entre com uma conta válida: {e}");
+        }
+
+        Console.Write("\n Pressione qualquer tecla para continuar.");
+        Console.Read();
+    }
+
+    internal void ExtratoConta() {
+        Console.Clear();
+        // mock
+        Conta conta = Contas[0];
+        Console.WriteLine($"Extrato conta {conta.NumeroConta} | saldo {conta.SaldoConta}");
+        LancamentoContas.ForEach(l => Console.WriteLine($"Tipo: {l.TipoLancamento} | Valor: {l.Valor}"));
         Console.Read();
 
     }
